@@ -3,13 +3,15 @@ import { inter } from '@/app/ui/fonts';
 import clsx from 'clsx';
 
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body className={clsx(inter.className, 'antialiased')}>{children}</body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body className={clsx(inter.className, 'antialiased')}>
+                {children}
+            </body>
+        </html>
+    );
 }
